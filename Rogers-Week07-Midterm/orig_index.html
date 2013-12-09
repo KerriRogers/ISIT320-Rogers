@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="elfPlayer">
+<head>
+    <title>ElvenWorld v5</title>
+    <link rel="shortcut icon" href="Assets/favicon.png">
+    <link href="index.css" rel="stylesheet" type="text/css" />    
+    <script src="Library/angular.js"></script>
+	<script src="Library/crafty.js"></script>
+	<script src="Library/angular-resource.js"></script>
+    <script src="Library/angular-mocks.js"></script>	
+	<script src="Source/GameCore/Actors.js"></script>
+	<script src="Source/GameCore/Food.js"></script>
+	<script src="Source/GameCore/Grid.js"></script>	
+	<script src="Source/GameCore/Player.js"></script>
+	<script src="Source/GameCore/Scenes.js"></script>
+	<script src="Source/GameCore/Village.js"></script>
+	<script src="Source/Characters.js"></script>
+	<script src="Source/ElfGame.js"></script>
+	<script src="Source/ElfPlayer.js"></script>	
+	
+	
+			      
+</head>
+<body>
+    <div id="gameBoard">
+        
+    </div>
+    
+    <div id="textDisplay" ng-controller="ElfController">
+        <p>SquareHead vs FlamingHead</p>
+        <p>{{name}}</p>        
+        <p>{{eventNote}}</p>
+        <p>{{encounterMessage}}</p>
+        <button ng-click="goLeft()">Left</button>
+        <button ng-click="stopMove()">Stop</button>
+        <p>SquareHead Moves</p>
+        <select size=3 id="moveMessage" ng-model="crazyFoo" ng-options="msg for msg in moveMessages"> </select><br>
+        <p>Action Progress</p>
+        	<select size=3 id="debugMessage" ng-model="crazyBar" ng-options="message for message in debugMessages"> </select><br>
+            <!-- ul ng-repeat="debugMessage in debugMessages track by $index">			
+                <li>{{debugMessage}}</li>
+            </ul -->                
+    </div>
+    
+<div id = "players">
+	
+	<a href="index.html" target="_blank">Click Here to See More Players</a>
+    	
+        	
+</div>
+    
+</body>
+</html>

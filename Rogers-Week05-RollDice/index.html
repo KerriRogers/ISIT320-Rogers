@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html ng-app="diceApp">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+		<title>Rogers-Week05-RollDice</title>
+		<script src="angular.js"></script>
+		<script src="index.js"></script>
+		<link href="index.css" rel="stylesheet" media="all" type="text/css" />
+	</head>
+	<body>
+		<h1>Roll The Dice</h1>
+
+		<div ng-controller="diceController">
+			<div class="1D6">
+				<img src="img/1D6.jpg" height=100 width=100>
+				<h3 class="Block">{{hintD6}}</h3>
+				<button class="Block" ng-click='rollD6()'>
+					Roll
+				</button>
+				<h3 class="Block">you rolled a = </h3>
+				<div class="Block">
+					{{totalD6}}
+				</div>
+			</div>
+
+			<div id="2D6">
+				<img src="img/2D6.jpg" height=100 width=100>
+				<h3 class="Block">{{hint2D6}}</h3>
+				<button class="Block" ng-click='roll2D6()'>
+					Roll
+				</button>
+				<h3 class="Block">2 dice rolled [</h3>
+				<div class="Block" ng-repeat="roll in x2D6Rolls">
+					{{roll}}&nbsp;
+				</div>
+				<h3 class="Block">]</h3>
+				<div class="Block">
+					&nbsp;=&nbsp;{{total2D6}}
+				</div>
+			</div>
+			<div id="3D6">
+				<img src="img/3D6.jpg" height=100 width=100>
+				<h3 class="Block">{{hint3D6}}</h3>
+				<button class="Block" ng-click='roll3D6()'>
+					Roll
+				</button>
+				<h3 class="Block">3 dice rolled [</h3>
+				<div class="Block" ng-repeat="roll in x3D6Rolls">
+					{{roll}}&nbsp;
+				</div>
+				<h3 class="Block">]</h3>
+				<div class="Block">
+					&nbsp;=&nbsp;{{total3D6}}
+				</div>
+			</div>
+			<div id=4D6>
+				<img src="img/4D6.jpg" height=100 width=100>
+				<h3 class="Block">{{hintD4}}</h3>
+				<button class="Block" ng-click='rollD4()'>
+					Roll
+				</button>
+				<h3 class="Block">you rolled a = </h3>
+				<div class="Block">
+					{{totalD4}}
+				</div>
+			</div>
+			<div id=10D>
+				<img src="img/10D.jpg" height=100 width=100>
+				<h3 class="Block">{{hintD10}}</h3>
+				<button class="Block" ng-click='rollD10()'>
+					Roll
+				</button>
+				<h3 class="Block">you rolled a = </h3>
+				<div class="Block">
+					{{totalD10}}
+				</div>
+			</div>
+			<div id="20D">
+				<img src="img/20D.jpg" height=100 width=100>
+				<h3 class="Block">{{hintD20}}</h3>
+				<button class="Block" ng-click='rollD20()'>
+					Roll
+				</button>
+				<h3 class="Block">you rolled a = </h3>
+				<div class="Block">
+					{{totalD20}}
+				</div>
+			</div>
+
+		</div>
+		<button>
+			<a href="test01.html">Test Dice Rolls</a>
+		</button>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+ <!DOCTYPE HTML>
+<html ng-app='kerriApp'>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>trying angularjs</title>
+		<script src="http://code.angularjs.org/1.2.0-rc.2/angular.min.js"></script>
+		<script src="index.js"></script>
+		<!--		<link href="index.css" type="text/css" rel="stylesheet"/>  -->
+	</head>
+	<body>
+		<div ng-controller="MyController">
+			<p>{{hint}}</p>			
+			<!-- Use number, not text, for type -->
+			<input id="input" type="number" ng-model="miles"  size="40"	placeholder="Enter # of Miles to convert to Feet">
+			<hr />
+			<button ng-click="convertMilesToFeet()">ConvertMiles to Feet</button>			
+			<p>Miles to Feet: {{milesToFeet}}</p>
+			<button ng-click="convertMilesToYards()">ConvertMiles to Yards</button>
+			<p>Miles to Yards: {{milesToYards}}</p>
+			<button ng-click="convertMilesToKilometers()">Convert Miles to Kilometers</button>
+			<p>Miles to Kilometers: {{milesToKilometers}}</p>
+		</div>
+
+	</body>
+</html>
