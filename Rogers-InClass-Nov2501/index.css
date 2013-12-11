@@ -1,0 +1,18 @@
+body {
+        background-color: #E0D1FF;
+}
+
+#result {
+        border: red solid thin;
+        width: 325px;
+        margin: 25px;
+        font-size: large;
+        color: #004545;
+        
+}
+
+table {
+        border: red solid thin;
+        margin: 25px;
+        padding: 5px;
+}
