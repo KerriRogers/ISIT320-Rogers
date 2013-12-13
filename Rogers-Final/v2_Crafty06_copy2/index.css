@@ -1,0 +1,62 @@
+body {
+	background: #D8C7D8;
+}
+
+a {
+	text-decoration:none;
+}
+
+#game {
+	width: 400px;
+	height: 400px;
+	background-color: #00BB88;
+}
+
+#title {
+	margin-left: 50px;
+}
+
+#chars {
+	margin-left: 50px;
+}
+
+#textDisplay, #gameBoard {
+	float: left;
+}
+
+#story {
+	width: 525px;
+	padding: 10px;
+	margin: 10px;
+	position: absolute;
+	left: 10px;
+	top: 400px;
+	background-color: #B28FB2;
+	border: solid black 2px; 
+}  
+
+#textDisplay {
+	width: 350px;
+	background-color: #B28FB2;
+	margin-left: 25px;
+	padding: 5px;
+	border: solid black 2px; 
+}
+
+#moreCharacters {
+	width: 800px;
+	background-color: #B28FB2;
+	margin-left: 50px;
+	padding: 5px;
+	border: solid black 2px;
+	float: left; 
+}
+
+#debugMessage {
+	width: 250px;
+}
+
+#frame {
+	width:200px;
+	height:200px;
+}

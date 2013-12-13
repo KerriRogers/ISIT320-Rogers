@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html ng-app="elvenApp">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Additional Characters</title>
+        <script src="Library/angular.js"></script>
+        <script src="Library/angular-mocks.js"></script>
+        <script src="Library/angular-resource.js"></script>
+        <link href="index.css" rel="stylesheet" type="text/css" />
+        <script src="index.js"></script>
+      </head>
+    <body>
+    	<h1 id='title'>More Characters</h1>
+         	<div id="chars">
+        		<img src="img/dwarf.png">
+        		<img src="img/halfling.png">
+        		<img src="img/preach.png">
+        		<img src="img/sasha.png">
+        		<img src="img/bones.png">
+        		<img src="img/reaper.png">
+         	</div>
+        		<br /> 
+        		 
+        <div id = "moreCharacters" ng-controller="MyController">
+        	<p>This character information is retrieved from Mongo db and
+        		from a Json file via a node server! 	</p>
+        		
+            		<button ng-click="loadAll()">Load Data</button>
+            		
+            <p>Rows in DB: {{presidentsLength}}</p>        		
+        	<ul>
+    			<li ng-repeat="president in presidents">
+    				<p>Race: {{president.getPresidentName()}} </p>
+					<p>Description: {{president.getTermStart()}}</p>
+					<p>Hit Points: {{president.getTermEnd()}}</p>
+					<p>Damage: {{president.getBorn()}}</p>
+    			</li>
+    		</ul>
+   		        		
+            <div ng-bind-html-unsafe="hint"> </div>
+  
+            <p>Here is the JSON retreived from the server: </p>
+          
+            	<p>{{data}}</p> 
+            	           
+        </div>
+           </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="elfPlayer">
+	<head>
+		<title>Game Prog320</title>
+		<link rel="shortcut icon" href="img/favicon.png">
+		<link href="index.css" rel="stylesheet" type="text/css" />
+		<script src="Library/angular.js"></script>
+        <script src="Library/crafty.js"></script>        
+        <script src="Source/GameCore/Actors.js"></script>
+        <script src="Source/GameCore/Food.js"></script>
+        <script src="Source/GameCore/Grid.js"></script>        
+        <script src="Source/GameCore/Player.js"></script>
+        <script src="Source/GameCore/Scenes.js"></script>
+        <script src="Source/GameCore/Village.js"></script>
+        <script src="Source/GameWrapper.js"></script>
+        <script src="Source/Characters/Characters.js"></script>
+		<script src="Source/Characters/Classes.js"></script>
+		<script src="Source/Characters/Hero.js"></script>
+		<script src="Source/Characters/Races.js"></script>
+        <script src="Source/ElfGame.js"></script>
+        <script src="Source/ElfPlayer.js"></script>        
+
+	</head>
+<body>
+	<div id="gameBoard">
+		
+		</div>
+
+			<div id="textDisplay" ng-controller="ElfController">
+				<p>{{name}}<img src="img/sasha.png"></p>
+				<p>{{eventNote}}</p>
+				<p>{{encounterMessage}}</p>
+				<button ng-click="goLeft()">Left</button>
+				<button ng-click="stopMove()">Stop</button>
+				<button><a href="index01.html" target="_blank">More Characters</a></button>
+				<p>Sasha's direction</p>
+				<select size=3 id="moveMessage" ng-model="crazyFoo" ng-options="msg for msg in moveMessages"></select>
+				<br>
+				<p>Sasha's points</p>
+				<select size=3 id="debugMessage" ng-model="crazyBar" ng-options="message for message in debugMessages"></select>
+				<br>
+			</div>
+
+			<div id="story">
+			Sasha the Zombie loves blood! Be sure to get some for health points!
+			Sasha will try to dig her friends out of the graves if you let her!
+			Use the arrow keys to move Sasha around the board. Let's get digging.
+			<br />
+			Sasha is invisible until version 2. You can use your keen intelect and savvy intelligence
+			to find her! Her starting position is 5 to the right and 5 down. Good Luck.
+			</div>
+</body>
+</html>

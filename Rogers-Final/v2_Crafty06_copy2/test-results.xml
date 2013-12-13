@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="Chrome 31.0.1650 (Windows 7)" package="undefined" timestamp="2013-12-04T22:50:07" id="0" hostname="Ziggy-PC" tests="10" errors="0" failures="0" time="0.078">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36"/>
+    </properties>
+    <testcase name="Can create gameEventService" time="0.063" classname="Chrome 31.0.1650 (Windows 7).Test Elf Game"/>
+    <testcase name="gets the width of the playing field" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Elf Game"/>
+    <testcase name="gets the height of the playing field" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Elf Game"/>
+    <testcase name="is a very silly test" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Elf Game"/>
+    <testcase name="Change Direction Broadcast" time="0.015" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="Test Two Direction Broadcasts" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="Change Tower Broadcast" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="Tests a Debug Broadcast" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="Two Debug Broadcast" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <testcase name="Tests Encounter Broadcast" time="0" classname="Chrome 31.0.1650 (Windows 7).Test Broadcasts: gameEventService"/>
+    <system-out><![CDATA[Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Test Change Direction Broadcast',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Test',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Direction',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Zombie',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Spodie',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Frenchi',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'DogBone',Chrome 31.0.1650 (Windows 7) LOG: LOG
+ 'Encounter'
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>
