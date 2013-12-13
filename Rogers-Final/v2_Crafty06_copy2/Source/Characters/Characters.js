@@ -1,8 +1,9 @@
 /**
- * @author Kerri Rogers
-  */
+ * Kerri Rogers
+ * 
+ */
 /* jshint devel: true */
-/* global angular:true */
+
 
 angular.module('characterMod', ['elfGameMod', 'heroMod', 'classesMod', 'racesMod'])
 .factory('people', function() {'use strict';

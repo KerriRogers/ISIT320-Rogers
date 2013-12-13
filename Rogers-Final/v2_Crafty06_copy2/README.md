@@ -1,7 +1,12 @@
+
+S3 URL of ISIT320 FinalProject:
+https://console.aws.amazon.com/s3/home?region=us-east-1
+
+
 CraftyDemo06
 ============
 
-Description of CraftyDemo06.
+Description of Final Project
 
 Sites of Interest
 -----------------

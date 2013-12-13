@@ -9,7 +9,7 @@ describe("TestHero", function() {'use strict';
 	var hero = null;
 	
 	beforeEach(function() {
-		module('heroMod');				
+		module('heroMod');
 	});
 	
 	beforeEach(inject(function($injector) {

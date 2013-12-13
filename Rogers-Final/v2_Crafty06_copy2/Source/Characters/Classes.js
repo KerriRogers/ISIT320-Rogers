@@ -1,5 +1,5 @@
 /**
- * @author Kerri Rogers
+ * Kerri Rogers
  * 47 Tests Full coverage
 */
 /* jshint devel: true */

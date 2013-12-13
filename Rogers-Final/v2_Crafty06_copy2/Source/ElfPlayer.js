@@ -1,7 +1,7 @@
  /**
  * Kerri Rogers
  */
- /* jshint devel: true */
+ 
 
 angular.module('elfPlayer', ['elfGameMod'])
 .factory('gameEventService', function($rootScope) { 'use strict';

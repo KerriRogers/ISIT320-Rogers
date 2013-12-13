@@ -1,5 +1,5 @@
 /**
- * @author Kerri Rogers
+ * Kerri Rogers
  * 
  */
 /* jshint devel: true */

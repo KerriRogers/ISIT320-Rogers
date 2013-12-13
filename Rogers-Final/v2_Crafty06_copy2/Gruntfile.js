@@ -11,7 +11,8 @@
 			options: {
 				
 				ignores: [
-					'angular-mocks.js', 
+					'angular-mocks.js',
+					'angular-resource.js', 
 					'coverage/**/prettify.js',
 					'*/ui-bootstrap-tpls-*.js',
 					'*/knockout-*.js', 

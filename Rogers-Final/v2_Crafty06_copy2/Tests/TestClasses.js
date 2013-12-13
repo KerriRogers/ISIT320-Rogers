@@ -1,5 +1,5 @@
 /**
- * @author Kerri Rogers
+ *  Kerri Rogers
  *  47 Tests Full coverage
  */
 /* jshint devel: true */
@@ -205,7 +205,7 @@ describe("TestClasses", function() {'use strict';
 		expect(classes.classes[3].weapons[0]).toEqual('any');
 	}); 
 
-	it("can get xpForLevelTwo", function()  { 'use strict';
+	it("can get xpForLevelTwo", function()  { 
 		expect(classes.classes[3].xpForLevelTwo).toEqual(1250);
 	}); 
 

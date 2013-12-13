@@ -28,7 +28,7 @@
 	function writeFile(localFileName, nameOnS3, binary) { 'use strict';
 	// Read in the file, convert it to base64, store to S3
 	
-		nameOnS3 = "Crafty06" + nameOnS3;
+		nameOnS3 = "finalproject" + nameOnS3;
 	
 		fs.readFile(localFileName, function(err, data) {
 			if (err) {
@@ -64,6 +64,9 @@
 				break;
 			case 'bmp':
 				contentType = 'image/bmp';
+				break;
+				case 'bmp':
+				contentType = 'audio/mpeg';
 				break;
 			case 'gif':
 				contentType = 'image/gif';

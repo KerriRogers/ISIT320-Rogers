@@ -10,17 +10,30 @@ module.exports = function(config) { 'use strict';
     frameworks: ['jasmine', 'commonjs'],
 
     // list of files / patterns to load in the browser
-    files: [   
-	'Library/*.js',
-	'Source/**/*.js',
+    files: [ 
+	'Library/angular.js',
+	'Library/angular-resource.js',
+	'Library/angular-mocks.js',
+	'Library/Crafty.js',
+	'Source/ElfGame.js',
+	'Source/ElfPlayer.js',
+//'Source/GameWrapper.js',
+	'Source/Characters/Characters.js',
+	'Source/Characters/Classes.js',
+	'Source/Characters/Hero.js',
+	'Source/Characters/Races.js',
+	'Source/GameCore/Actors.js',
+	'Source/GameCore/Actors.js',
+	'Source/GameCore/Actors.js',
+	'Source/GameCore/Actors.js',
+	'Source/GameCore/Actors.js',
 	'Tests/TestHero.js',
 	'Tests/TestRaces.js',
 	'Tests/TestClasses.js',
-	'Tests/TestElfGame.js',
-	'Tests/TestBroadcasts.js',
-	'Tests/TestElfGame.js',
-	'Tests/TestElfPlayer.js',
-	'Tests/TestGameboard.js'
+//'Tests/TestBroadcasts.js',
+//Tests/TestElfGame.js',
+//'Tests/TestElfPlayer.js'
+//'Tests/TestGameboard.js'
 //'Tests/TestCrafty.js',    
 //  'Tests/*.js'
     ],
